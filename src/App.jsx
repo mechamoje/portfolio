@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from "./components/header/header"
-import Nav from "./components/nav/nav"
-import About from "./components/about/about.jsx"
-import Experience from "./components/experience/experience"
-import Service from "./components/services/service"
-import Portfolio from "./components/portfolio/portfolio"
-import Testimonials from "./components/testimonials/testimonials"
-import Contact from "./components/contact/contact"
+import { Header } from "./components/header/Header"
+import { Nav } from "./components/nav/Nav"
+import { About } from "./components/about/About"
+import { Experience } from "./components/experience/Experience"
+import { Service } from "./components/services/Service"
+import { Portfolio } from "./components/portfolio/Portfolio"
+import { Testimonials } from "./components/testimonials/Testimonials"
+import { Contact } from "./components/contact/Contact"
 
 export const App = () => {
   return (
@@ -16,7 +16,7 @@ export const App = () => {
       <About />
       <Experience />
       <Service />
-      <Portfolio />
+      <Portfolio /> 
       <Testimonials />
       <Contact />
     </>
