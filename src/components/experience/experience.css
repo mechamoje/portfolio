@@ -1,7 +1,13 @@
+.experience__backend {
+    display: none;
+}
+
 .experience__container { 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 2rem;
     gap: 2rem;
+    justify-content: center;
 }
 
 .experience__container > div {
@@ -28,6 +34,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    grid-column-gap: 2rem;
 }
 
 .experience__details {
@@ -39,6 +46,7 @@
     margin-top: 7px;
     color: var(color--primary);
 }
+
 
 @media screen and (max-width: 1024px) {
     .experience__container {

@@ -6,8 +6,8 @@ import {CgToolbox} from 'react-icons/cg'
 import {GoBook} from "react-icons/go"
 import {TbPhoneCall} from 'react-icons/tb'
 import { useState } from 'react'
-import {FiTool} from 'react-icons/fi'
-import {MdOutlineReviews} from 'react-icons/md'
+// import {FiTool} from 'react-icons/fi'
+// import {MdOutlineReviews} from 'react-icons/md'
 
 
 export const Nav = () => {

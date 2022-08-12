@@ -1,84 +1,58 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG1 from "../../assets/portfolio1.png";
+import IMG2 from "../../assets/portfolio2.png";
+import IMG3 from "../../assets/portfolio3.png";
 
 const data = [
   {
-    id:1,
-    image:IMG1,
-    title:'title x' ,
-    github:'https://github.com', 
-    demo:'https://vercel.com',
+    id: 1,
+    image: IMG1,
+    title: "Projeto Strata",
+    github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
+    demo: "projeto-strata-htmlcss.vercel.app",
   },
   {
-    id:2,
-    image:IMG2,
-    title:'title x' ,
-    github:'https://github.com', 
-    demo:'https://vercel.com',
+    id: 2,
+    image: IMG2,
+    title: "Netflix clone",
+    github: "https://github.com/ferreirajn/clone_netflix_DIO",
+    demo: "clonenetflix-bay.vercel.app",
   },
   {
-    id:3,
-    image:IMG3,
-    title:'title x' ,
-    github:'https://github.com', 
-    demo:'https://vercel.com',
+    id: 3,
+    image: IMG3,
+    title: "Names variation",
+    github: "https://github.com/ferreirajn/names_variation",
+    demo: "names-variation.vercel.app",
   },
-  {
-    id:4,
-    image:IMG4,
-    title:'title x' ,
-    github:'https://github.com', 
-    demo:'https://vercel.com',
-  },
-  {
-    id:5,
-    image:IMG5,
-    title:'title x' ,
-    github:'https://github.com', 
-    demo:'https://vercel.com',
-  },
-  {
-    id:6,
-    image:IMG6,
-    title:'title x' ,
-    github:'https://github.com', 
-    demo:'https://vercel.com',
-  }
-]
+];
 
 export const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5> My Recent work </h5>
+      <h5> Trabalhos recentes </h5>
       <h2> Portfolio </h2>
-     
+
       <div className="containar portfolio__container">
-        { 
-          data.map(({ id,image,title,github,demo}) =>{
+        {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
-              </div>  
+              </div>
               <h3> {title} </h3>
-               <div className="portfolio__item-cta">
-                  <a href={github} target="_blank" className="btn">
-                    Github
-                  </a>
-                  <a href={demo} target="_blank" className="btn btn-primary">
-                    Live Demo
-                  </a> 
-                </div>
-              </article>
-          )
-        })
-        }
+              <div className="portfolio__item-cta">
+                <a href={github} target="_blank" className="btn">
+                  Github
+                </a>
+                <a href={demo} target="_blank" className="btn btn-primary">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

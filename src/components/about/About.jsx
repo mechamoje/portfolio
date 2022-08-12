@@ -1,56 +1,57 @@
-import React from 'react'
-import "./about.css"
-import ME from '../../assets/me-about.svg'
-import {GiBrain} from 'react-icons/gi'
-import {FaUsers} from 'react-icons/fa'
-import {MdFolderSpecial} from 'react-icons/md'
+import React from "react";
+import "./about.css";
+import ME from "../../assets/me-about.svg";
+import { GiBrain } from "react-icons/gi";
+import { FaUsers } from "react-icons/fa";
+import { MdFolderSpecial } from "react-icons/md";
 
 export const About = () => {
   return (
     <section id="about">
-      <h5> Get to know </h5>
-      <h2> About me </h2>
+      <h5> Saiba mais </h5>
+      <h2> Sobre mim </h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="a picture of me" />
+            <img src={ME} alt="uma foto minha sorrindo, com camisa laranja" />
           </div>
         </div>
 
         <div className="about__content">
           <div className="about__cards">
-
             <article className="about__card">
-              <GiBrain className='about__icon' />
-              <h5> Experience </h5>
-              <small> 1+ year working experience</small>
+              <GiBrain className="about__icon" />
+              <h5> Conhecimentos </h5>
+              <small> Cursando Análise e Desenvolvimento de sistemas </small>
             </article>
 
             <article className="about__card">
-              <FaUsers className='about__icon' />
-              <h5> Clients </h5>
-              <small> 200 + clients </small>
+              <FaUsers className="about__icon" />
+              <h5> Clientes </h5>
+              <small> 20 + projetos realizados </small>
             </article>
 
             <article className="about__card">
-              <MdFolderSpecial className='about__icon' />
-              <h5> Experience </h5>
-              <small> 1+ year working experience</small>
+              <MdFolderSpecial className="about__icon" />
+              <h5> Experiencia </h5>
+              <small> 6+ meses de experiência </small>
             </article>
+          </div>
 
-            </div>
-            
-            <p> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facere blanditiis aliquid voluptates ad, optio quia nam dolores inventore ipsum delectus similique veritatis veniam fugiat architecto alias. Molestiae, illo enim.
-            </p>
+          <p>
+            Fluente em inglês, atualmente me graduando em Análise e
+            Desenvolvimento de Sistemas e especializando meus estudos em
+            desenvolvimento front-end. Trabalhando diariamente e construindo
+            conhecimentos em React, Typescript, NextJS, HTML5 e CSS3.
+            Familiaridade com WordPress, JavaScript e PHP.
+          </p>
 
-            <a href="#contact" className='btn btn-primary'> Let's talk</a>
-
-        
+          <a href="#contact" className="btn btn-primary">
+            Fale comigo
+          </a>
         </div>
       </div>
-
     </section>
-  )
-}
+  );
+};
