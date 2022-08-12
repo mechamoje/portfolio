@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import ME from '../../assets/me-about.jpg'
+import ME from '../../assets/me-about.svg'
 import {GiBrain} from 'react-icons/gi'
 import {FaUsers} from 'react-icons/fa'
 import {MdFolderSpecial} from 'react-icons/md'
