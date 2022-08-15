@@ -3,14 +3,13 @@ arrumar CV //
 arrumar imagens // 
 arrumar read me github
 nav bar diferente no desktop //
-adicionar logo com meu nome
+adicionar logo com meu nome 
 adicionar efeitos de interação
-adicionar efeito acinzentar bg
-arrumar readme git hub
-/* "transform-origin: rotate(10deg);" alterar */
-mudar tudo que for azul para cinza
+adicionar efeito acinzentar bg // 
+/* "transform-origin: rotate(10deg);" alterar */ \\ 
+mudar tudo que for azul para cinza \\ 
 mudar links aba portfolio
-checar tabs alt
+checar tags alt
 adicionar swiper react
 adicionar algo que interaja com o cursor: game?
 adicionar mensagem de envio no forms
