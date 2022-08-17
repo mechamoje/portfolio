@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "my-portfolio-mocha-three.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
