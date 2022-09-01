@@ -10,21 +10,21 @@ const data = [
     image: IMG1,
     title: "Projeto Strata",
     github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
-    demo: "projeto-strata-htmlcss.vercel.app",
+    demo: "https://projeto-strata-htmlcss.vercel.app",
   },
   {
     id: 2,
     image: IMG2,
     title: "Netflix clone",
     github: "https://github.com/ferreirajn/clone_netflix_DIO",
-    demo: "clonenetflix-bay.vercel.app",
+    demo: "https://clonenetflix-bay.vercel.app",
   },
   {
     id: 3,
     image: IMG3,
     title: "Names variation",
     github: "https://github.com/ferreirajn/names_variation",
-    demo: "names-variation.vercel.app",
+    demo: "https://names-variation.vercel.app",
   },
 ];
 
