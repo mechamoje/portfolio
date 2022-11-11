@@ -3,14 +3,15 @@ import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
+import IMG4 from "../../assets/IMG4.jpeg";
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: "Projeto Strata",
-    github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
-    demo: "https://projeto-strata-htmlcss.vercel.app",
+    image: IMG4,
+    title: "EMI project",
+    github: "https://github.com/ferreirajn/sus-project",
+    demo: "https://emi-project.vercel.app/",
   },
   {
     id: 2,
@@ -25,6 +26,13 @@ const data = [
     title: "Names variation",
     github: "https://github.com/ferreirajn/names_variation",
     demo: "https://names-variation.vercel.app",
+  },
+  {
+    id: 1,
+    image: IMG1,
+    title: "Projeto Strata",
+    github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
+    demo: "https://projeto-strata-htmlcss.vercel.app",
   },
 ];
 
