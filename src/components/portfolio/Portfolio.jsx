@@ -55,23 +55,25 @@ const data = [
 export const Portfolio = () => {
   return (
     <section id="portfolio">
+      <article>
       <h5> Trabalhos recentes </h5>
       <h2> Portfolio </h2>
+      </article>
 
       <div className="containar portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} alt={title} />
+                <img src={image} alt={title} className='portifolio-img' />
               </div>
               <h3> {title} </h3>
               <div className="portfolio__item-cta">
-                <a href={github} target="_blank" className="btn">
+                <a href={github} target="_blank"rel="noopener noreferrer" className="btn">
                   Github
                 </a>
-                <a href={demo} target="_blank" className="btn btn-primary">
-                  Live Demo
+                <a href={demo} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                  Demonstração
                 </a>
               </div>
             </article>

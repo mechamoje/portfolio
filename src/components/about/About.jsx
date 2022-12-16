@@ -8,9 +8,11 @@ import { MdFolderSpecial } from "react-icons/md";
 export const About = () => {
   return (
     <section id="about">
-      <h5> Saiba mais </h5>
-      <h2> Sobre mim </h2>
-
+      <article> 
+        <h5> Saiba mais </h5>
+        <h2> Sobre mim </h2> 
+      </article>
+    
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
@@ -23,13 +25,13 @@ export const About = () => {
             <article className="about__card">
               <GiBrain className="about__icon" />
               <h5> Conhecimentos </h5>
-              <small> Cursando Análise e Desenvolvimento de sistemas </small>
+              <small> Análise e Desenvolvimento de sistemas </small>
             </article>
 
             <article className="about__card">
               <FaUsers className="about__icon" />
-              <h5> Clientes </h5>
-              <small> 20 + projetos realizados </small>
+              <h5> Projetos </h5>
+              <small> 15+ projetos realizados </small>
             </article>
 
             <article className="about__card">
@@ -47,9 +49,12 @@ export const About = () => {
             Familiaridade com WordPress, JavaScript e PHP.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          <button className="about-btn btn-primary btn">
+            <a href="#contact">
             Fale comigo
-          </a>
+          </a> 
+          </button>
+
         </div>
       </div>
     </section>

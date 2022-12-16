@@ -1,11 +1,27 @@
 #about {
-    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#about article {
+    text-align: center;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .about__container {
-    display: grid;
-    grid-template-columns: 40% 52%;
+    display: flex;
     gap: 8%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
 }       
 
 .about__me {
@@ -58,28 +74,45 @@
 .about__icon {
     color: var(--color-primary);
     font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
     margin-bottom: 0.3rem;
 }
 
 .about__card h5 {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .about__card small {
-    font-size: 0.7rem;
+    font-size: 0..9rem;
     color: var(--color-light);
 }
 
 .about__container p {
     margin: 1.2rem 0 1.5rem;
     color: var(--color-light);
-    width: 105%;
 } 
+
+.about-btn {
+    width: 100%;
+}
+
+.about-btn a {
+    color: black;
+}
 
 @media screen and (max-width: 1024px) {
    .about__container{
+    flex-direction: column;
     grid-template-columns: 1fr;
     gap: 0;
+   }
+
+   .about__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
    }
 
    .about__me{
@@ -117,9 +150,5 @@
 
     .about__content p {
         margin: 1.5rem 0;
-    }
-
-    #about {
-        margin-top: 0rem;
     }
 }

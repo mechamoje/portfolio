@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .container.contact__container {
     width: 58%;
     display: grid;
@@ -8,7 +12,7 @@
 .contact__options{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    justify-content: space-between;
 }
 
 .contact__option {
@@ -64,5 +68,9 @@ input, textarea {
 @media screen and (max-width: 600px) {
     .container.contact__container{
         width: var(--container-width-sm);
+    }
+
+    .contact__options {
+        gap: 10px;
     }
 }
