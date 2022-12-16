@@ -4,24 +4,40 @@ import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/IMG4.jpeg";
+import IMGRD from "../../assets/IMGRD.png"
+import IMGSNAKE from "../../assets/IMGSNAKE.png"
 
 const data = [
   {
-    id: 1,
+    id: 6,
+    image: IMGSNAKE,
+    title: "FunSnake game",
+    github: "https://github.com/ferreirajn/funsnake-game",
+    demo: "https://funsnake-game.vercel.app/",
+  },
+  {
+    id: 5,
+    image: IMGRD,
+    title: "RD Station Clone",
+    github: "https://github.com/ferreirajn/rd-project",
+    demo: "https://rd-project.vercel.app",
+  },
+  {
+    id: 4,
     image: IMG4,
     title: "EMI project",
     github: "https://github.com/ferreirajn/sus-project",
     demo: "https://emi-project.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: IMG2,
     title: "Netflix clone",
     github: "https://github.com/ferreirajn/clone_netflix_DIO",
     demo: "https://clonenetflix-bay.vercel.app",
   },
   {
-    id: 3,
+    id: 2,
     image: IMG3,
     title: "Names variation",
     github: "https://github.com/ferreirajn/names_variation",
@@ -33,7 +49,7 @@ const data = [
     title: "Projeto Strata",
     github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
     demo: "https://projeto-strata-htmlcss.vercel.app",
-  },
+  }
 ];
 
 export const Portfolio = () => {
