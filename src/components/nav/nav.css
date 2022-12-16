@@ -35,26 +35,3 @@ nav a.active {
 nav #mobileMenu {
     display: none;
 }
-
-@media screen and (max-width: 500px) {
-    nav {
-        background: rgba(0, 0, 0, 0.3);
-        width: max-content;
-        padding: 0.7rem 1.7rem;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    nav .openmenu {
-        background-color: blue;
-    }
-
-    nav #mobileMenu {
-        display: block; 
-    }
-
-    #home, #user, #job, #book, #phone{
-        display: none;
-    }
-
-}
