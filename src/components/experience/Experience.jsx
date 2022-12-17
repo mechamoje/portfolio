@@ -36,17 +36,17 @@ const experience = [
   },
   {
     icon: ReactLogo,
-    language: 'Next js',
+    language: 'React JS',
     level: stars(4),
   },
   {
     icon: csslogo,
-    language: 'Next js',
+    language: 'CSS3',
     level:stars(4),
   },
   {
     icon: tslogo,
-    language: 'Next js',
+    language: 'Typescript',
     level: stars(2),
   },
   {
@@ -56,7 +56,7 @@ const experience = [
   },
   {
     icon: htmllogo,
-    language: 'Next js',
+    language: 'HTML5',
     level: stars(5),
   }
 ]
