@@ -13,7 +13,7 @@ export const Nav = () => {
   const [activeNav, setActiveNav] = useState('')
 
   return (
-    <nav>
+    <nav id='nav-icons'>
       <a id='home' href="#"  onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} > <VscHome className='homeicon' /> </a>
       <a id='user' href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''} > <FiUser className='abouticon' /> </a>
       <a id='job' href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}> <CgToolbox className='jobicon' /> </a>

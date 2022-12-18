@@ -42,8 +42,8 @@ export const Contact = () => {
           <article className="contact__option">
             <MdMarkEmailUnread className="contact__option-icon" />
             <h4>Email</h4>
-            <h5> jessy.ard11@gmail.com </h5>
-            <a href="mailto:jessy.ard11@gmail.com" target="_blank" rel="noopener noreferrer">
+            <h5> devjessica.f@gmail.com </h5>
+            <a href="mailto:devjessica.f@gmail.com" target="_blank" rel="noopener noreferrer">
               {" "}
               Envie sua mensagem{" "}
             </a>

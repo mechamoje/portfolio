@@ -23,7 +23,11 @@
     align-content: center;
     align-items: center;
     flex-wrap: nowrap;
-}       
+}     
+
+#about .btn-primary {
+    margin-bottom: 10px;
+}
 
 .about__me {
     width: 100%;

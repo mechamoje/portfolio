@@ -1,4 +1,4 @@
-nav {
+#nav-icons {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
@@ -14,7 +14,7 @@ nav {
     backdrop-filter: blur(15px);
 }
 
-nav a {
+#nav-icons a {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
@@ -23,15 +23,15 @@ nav a {
     font-size: 1.1rem;
 }
 
-nav a:hover{
+#nav-icons a:hover{
     background: rgba(0, 0, 0, 0.3);
 }
 
-nav a.active {
+#nav-icons a.active {
     background: var(--color-bg);
     color: var(--color-white);
 }
 
-nav #mobileMenu {
+#nav-icons #mobileMenu {
     display: none;
 }
