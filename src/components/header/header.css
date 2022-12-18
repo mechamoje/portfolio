@@ -105,6 +105,17 @@ header {
         height: 100vh;
     }
 
+    #nav-list-container {
+        margin-left: 20px;
+    }
+
+    #nav-list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
     .header__socials, .scroll__down {
         display: none;
     }
