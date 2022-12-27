@@ -6,21 +6,30 @@ import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/IMG4.jpeg";
 import IMGRD from "../../assets/IMGRD.png"
 import IMGSNAKE from "../../assets/IMGSNAKE.png"
+import memory from "../../assets/memory.png"
 
 const data = [
+
   {
-    id: 6,
-    image: IMGSNAKE,
-    title: "FunSnake game",
-    github: "https://github.com/ferreirajn/funsnake-game",
-    demo: "https://funsnake-game.vercel.app/",
+    id: 7,
+    image: memory,
+    title: "Memory game",
+    github: "https://github.com/ferreirajn/memorygame",
+    demo: "memorygame-alpha.vercel.app",
   },
   {
-    id: 5,
+    id: 6,
     image: IMGRD,
     title: "RD Station Clone",
     github: "https://github.com/ferreirajn/rd-project",
     demo: "https://rd-project.vercel.app",
+  },
+  {
+    id: 5,
+    image: IMGSNAKE,
+    title: "FunSnake game",
+    github: "https://github.com/ferreirajn/funsnake-game",
+    demo: "https://funsnake-game.vercel.app/",
   },
   {
     id: 4,
