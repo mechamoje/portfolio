@@ -9,20 +9,19 @@ import IMGSNAKE from "../../assets/IMGSNAKE.png"
 import memory from "../../assets/memory.png"
 
 const data = [
-
   {
     id: 7,
-    image: memory,
-    title: "Memory game",
-    github: "https://github.com/ferreirajn/memorygame",
-    demo: "memorygame-alpha.vercel.app",
-  },
-  {
-    id: 6,
     image: IMGRD,
     title: "RD Station Clone",
     github: "https://github.com/ferreirajn/rd-project",
     demo: "https://rd-project.vercel.app",
+  },
+  {
+    id: 6,
+    image: memory,
+    title: "Memory game",
+    github: "https://github.com/ferreirajn/memorygame",
+    demo: "memorygame-alpha.vercel.app",
   },
   {
     id: 5,
