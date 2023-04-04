@@ -4,17 +4,26 @@ import IMG1 from "../../assets/portfolio1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/IMG4.jpeg";
-import IMGRD from "../../assets/IMGRD.png"
-import IMGSNAKE from "../../assets/IMGSNAKE.png"
-import memory from "../../assets/memory.png"
+import IMGRD from "../../assets/IMGRD.png";
+import IMGSNAKE from "../../assets/IMGSNAKE.png";
+import DLAC from "../../assets/DLAC.jpeg";
+import memory from "../../assets/memory.png";
 
 const data = [
+  {
+    id: 8,
+    image: DLAC,
+    title: "Da Lama ao Ca$h - Game",
+    demo: "https://dalamaaocash.itch.io/da-lama-ao-cash",
+    type: "game",
+  },
   {
     id: 7,
     image: IMGRD,
     title: "RD Station Clone",
     github: "https://github.com/ferreirajn/rd-project",
     demo: "https://rd-project.vercel.app",
+    type: "project",
   },
   {
     id: 6,
@@ -22,6 +31,7 @@ const data = [
     title: "Memory game",
     github: "https://github.com/ferreirajn/memorygame",
     demo: "memorygame-alpha.vercel.app",
+    type: "project",
   },
   {
     id: 5,
@@ -29,6 +39,7 @@ const data = [
     title: "FunSnake game",
     github: "https://github.com/ferreirajn/funsnake-game",
     demo: "https://funsnake-game.vercel.app/",
+    type: "project",
   },
   {
     id: 4,
@@ -36,6 +47,7 @@ const data = [
     title: "EMI project",
     github: "https://github.com/ferreirajn/sus-project",
     demo: "https://emi-project.vercel.app/",
+    type: "project",
   },
   {
     id: 3,
@@ -43,6 +55,7 @@ const data = [
     title: "Netflix clone",
     github: "https://github.com/ferreirajn/clone_netflix_DIO",
     demo: "https://clonenetflix-bay.vercel.app",
+    type: "project",
   },
   {
     id: 2,
@@ -50,6 +63,7 @@ const data = [
     title: "Names variation",
     github: "https://github.com/ferreirajn/names_variation",
     demo: "https://names-variation.vercel.app",
+    type: "project",
   },
   {
     id: 1,
@@ -57,35 +71,67 @@ const data = [
     title: "Projeto Strata",
     github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
     demo: "https://projeto-strata-htmlcss.vercel.app",
-  }
+    type: "project",
+  },
 ];
 
 export const Portfolio = () => {
   return (
     <section id="portfolio">
       <article>
-      <h5> Trabalhos recentes </h5>
-      <h2> Portfolio </h2>
+        <h5> Trabalhos recentes </h5>
+        <h2> Portfolio </h2>
       </article>
 
       <div className="containar portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} className='portifolio-img' />
-              </div>
-              <h3> {title} </h3>
-              <div className="portfolio__item-cta">
-                <a href={github} target="_blank"rel="noopener noreferrer" className="btn">
-                  Github
-                </a>
-                <a href={demo} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  Demonstração
-                </a>
-              </div>
-            </article>
-          );
+        {data.map(({ id, image, title, github, demo, type }) => {
+          if (type === "game") {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} className="portifolio-img" />
+                </div>
+                <h3> {title} </h3>
+                <div className="portfolio__item-cta">
+                  <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Jogar
+                  </a>
+                </div>
+              </article>
+            );
+          } else {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} className="portifolio-img" />
+                </div>
+                <h3> {title} </h3>
+                <div className="portfolio__item-cta">
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href={demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Demonstração
+                  </a>
+                </div>
+              </article>
+            );
+          }
         })}
       </div>
     </section>
