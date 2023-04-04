@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me-about.svg";
+import ME from "../../assets/me-about.png";
 import { GiBrain } from "react-icons/gi";
 import { FaUsers } from "react-icons/fa";
 import { MdFolderSpecial } from "react-icons/md";
@@ -23,32 +23,32 @@ export const About = () => {
             <article className="about__card">
               <GiBrain className="about__icon" />
               <h5> Conhecimentos </h5>
-              <small> Cursando Análise e Desenvolvimento de sistemas </small>
+              <small> Análise e Desenvolvimento de sistemas </small>
             </article>
 
             <article className="about__card">
               <FaUsers className="about__icon" />
-              <h5> Clientes </h5>
+              <h5> Projetos </h5>
               <small> 20 + projetos realizados </small>
             </article>
 
             <article className="about__card">
               <MdFolderSpecial className="about__icon" />
               <h5> Experiencia </h5>
-              <small> 6+ meses de experiência </small>
+              <small> 1+ ano de experiência </small>
             </article>
           </div>
 
           <p>
             Fluente em inglês, atualmente me graduando em Análise e
             Desenvolvimento de Sistemas e especializando meus estudos em
-            desenvolvimento front-end. Trabalhando diariamente e construindo
-            conhecimentos em React, Typescript, NextJS, HTML5 e CSS3.
-            Familiaridade com WordPress, JavaScript e PHP.
+            Desenvolvimento Web Fullstack. Trabalhando diariamente com React.js,
+            Typescript, Next.js, PHP e WordPress. Desenvolvendo jogos através do
+            Construct 3 nas horas vagas.
           </p>
 
           <a href="#contact" className="btn btn-primary">
-            Fale comigo
+            Entre em contato
           </a>
         </div>
       </div>
