@@ -6,8 +6,8 @@ import {BsLinkedin} from "react-icons/bs"
 export const Footer = () => {
   return (
     <footer>
-
-      <a href="#" className='footer__logo'> JÉSSICAF. </a>
+      <div id="footer-wrapper">
+         <a href="#" className='footer__logo'> JÉSSICAF. </a>
 
       <ul className='permalinks' >
         <li> <a href="#"> Home </a> </li>
@@ -23,9 +23,6 @@ export const Footer = () => {
         <a href="https://www.linkedin.com/in/j%C3%A9ssica-ferreira-soueu/"> <BsLinkedin/> </a>
         <a href="https://www.instagram.com/_jsolari/"> <BsInstagram/> </a>
       </div>
-
-      <div className="footer__copyright">
-        <small> &copy; JÉSSICA FERREIRA </small>
       </div>
 
     </footer>

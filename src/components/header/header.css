@@ -1,5 +1,4 @@
 header {
-    height: 100vh;
     padding-top: 3rem;
 }
 
@@ -7,6 +6,10 @@ header {
     text-align: center;
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .cta {
@@ -26,6 +29,11 @@ header {
     bottom: 3rem;
 }
 
+.header__socials img {    
+    width: 50px;
+    height: 50px;
+}
+
 .header__socials::after{
     content: '';
     width: 1px;
@@ -34,12 +42,40 @@ header {
 }
 
 .me_img {
-    width: 22rem;
-    height: 23rem;
     margin: auto;
+    position: inherit;
+}
+
+.me_img img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#nav-list-container {
+    background-color: white;
     position: absolute;
-    left: calc(50% - 11rem);
-    top: 15em;
+    margin-top: 2.8rem;
+    margin-left: 85px;
+    padding: 10px;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 2px rgb(48, 46, 46);
+}
+
+#nav-list-container>h4 {
+    color: var(--color-bg-variant);
+    border-bottom: 1px solid rgba(157, 119, 69, 0.35);
+}
+
+#nav-list li {
+    display: inline;
+    padding: 5px 10px;
+    margin-inline: 10px;
+}
+
+#nav-list li a:hover{
+    cursor: pointer;
+    color: rgba(157, 119, 69, 0.35);
 }
 
 .scroll__down {
@@ -51,6 +87,9 @@ header {
     font-size: 0.9rem;
 }
 
+.hide {
+    display: none;
+}
 
 @media screen and (max-width: 1024px) {
     header {
@@ -63,6 +102,17 @@ header {
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+    }
+
+    #nav-list-container {
+        margin-left: 20px;
+    }
+
+    #nav-list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
     }
 
     .header__socials, .scroll__down {

@@ -32,16 +32,18 @@ export const Contact = () => {
 
   return (
     <section id="contact">
-      <h5> Entre em contato </h5>
-      <h2> Fale comigo </h2>
+      <article>
+        <h5> Entre em contato </h5>
+        <h2> Fale comigo </h2>  
+      </article>
 
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
             <MdMarkEmailUnread className="contact__option-icon" />
             <h4>Email</h4>
-            <h5> jessy.ard11@gmail.com </h5>
-            <a href="mailto:jessy.ard11@gmail.com" target="_blank">
+            <h5> devjessica.f@gmail.com </h5>
+            <a href="mailto:devjessica.f@gmail.com" target="_blank" rel="noopener noreferrer">
               {" "}
               Envie sua mensagem{" "}
             </a>
@@ -53,6 +55,7 @@ export const Contact = () => {
             <a
               href="https://api.whatsapp.com/send?phone=5581992065674"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Envie sua mensagem
             </a>
