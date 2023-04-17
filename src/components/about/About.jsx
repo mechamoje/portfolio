@@ -96,11 +96,12 @@ export const About = () => {
           </div>
 
           <p>
-            Fluent in English, currently graduating in Systems and Analisys
-            Development and focusing my studying in front-end development.
-            Working daily and building strong knowledge in JavaScript, React.js,
-            Next.js, Typescript, HTML5 and CSS3. Familiarity with Wordpress and
-            PHP. Always in development and working hard to improve my skills.
+            I'm fluent in English, persuing a degree in Systems and Analysis
+            Development (which will be over around 2024-03) and focusing my
+            studies on web development. I've worked daily and built strong
+            knowledge in JavaScript, React.js, Next.js, Typescript, HTML5, CSS3,
+            WordPress, PHP and more. I'm always in development and working hard
+            to improve my skills. Being my best is my goal.
           </p>
 
           <button className="about-btn btn-primary btn">
