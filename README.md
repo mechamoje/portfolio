@@ -1,5 +1,5 @@
 # Meu Portfolio Web
-
+ 
 [![React](https://img.shields.io/badge/React-17.0.2-blue)](https://reactjs.org/)
 
 Bem-vindo(a) ao meu Portfolio! Este projeto é a versão 1 do meu portfolio pessoal, construído utilizando React JS. Atualmente, estou trabalhando na versão 2, que trará novas funcionalidades e será desenvolvida com outras tecnologias.
