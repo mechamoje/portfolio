@@ -1,81 +1,29 @@
-import React from "react";
+import React, { FC, useEffect, useState } from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.png";
-import IMG2 from "../../assets/portfolio2.png";
-import IMG3 from "../../assets/portfolio3.png";
-import IMG4 from "../../assets/IMG4.jpeg";
-import IMGRD from "../../assets/IMGRD.png";
-import IMGSNAKE from "../../assets/IMGSNAKE.png";
-import DLAC from "../../assets/DLAC.jpeg";
-import memory from "../../assets/memory.png";
-
-const data = [
-  {
-    id: 8,
-    image: DLAC,
-    title: "Da Lama ao Ca$h - Game",
-    demo: "https://dalamaaocash.itch.io/da-lama-ao-cash",
-    type: "game",
-  },
-  {
-    id: 7,
-    image: IMGRD,
-    title: "RD Station Clone",
-    github: "https://github.com/ferreirajn/rd-project",
-    demo: "https://rd-project.vercel.app",
-    type: "project",
-  },
-  {
-    id: 6,
-    image: memory,
-    title: "Memory game",
-    github: "https://github.com/ferreirajn/memorygame",
-    demo: "memorygame-alpha.vercel.app",
-    type: "project",
-  },
-  {
-    id: 5,
-    image: IMGSNAKE,
-    title: "FunSnake game",
-    github: "https://github.com/ferreirajn/funsnake-game",
-    demo: "https://funsnake-game.vercel.app/",
-    type: "project",
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: "EMI project",
-    github: "https://github.com/ferreirajn/sus-project",
-    demo: "https://emi-project.vercel.app/",
-    type: "project",
-  },
-  {
-    id: 3,
-    image: IMG2,
-    title: "Netflix clone",
-    github: "https://github.com/ferreirajn/clone_netflix_DIO",
-    demo: "https://clonenetflix-bay.vercel.app",
-    type: "project",
-  },
-  {
-    id: 2,
-    image: IMG3,
-    title: "Names variation",
-    github: "https://github.com/ferreirajn/names_variation",
-    demo: "https://names-variation.vercel.app",
-    type: "project",
-  },
-  {
-    id: 1,
-    image: IMG1,
-    title: "Projeto Strata",
-    github: "https://github.com/ferreirajn/ProjetoStrataHTMLCSS",
-    demo: "https://projeto-strata-htmlcss.vercel.app",
-    type: "project",
-  },
-];
 
 export const Portfolio = () => {
+  const [projects, setProjects] = useState([]);
+
+  async function getProjects() {
+    try {
+      const response = await fetch("http://127.0.0.1:3003/projects/");
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const ProjectsData = await response.json();
+      return ProjectsData;
+    } catch (error) {
+      console.error("Error fetching Projects:", error);
+      return [];
+    }
+  }
+
+  useEffect(() => {
+    getProjects().then((projectsData) => {
+      setProjects(projectsData);
+    });
+  }, []);
+
   return (
     <section id="portfolio">
       <article>
@@ -84,14 +32,15 @@ export const Portfolio = () => {
       </article>
 
       <div className="containar portfolio__container">
-        {data.map(({ id, image, title, github, demo, type }) => {
+        {projects.reverse().map(({ id, cover, title, github, demo, type }) => {
+          const imageUrl = `${process.env.REACT_APP_MEDIA_URL}${cover}`;
           if (type === "game") {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} className="portifolio-img" />
+                  <img src={imageUrl} alt={title} className="portifolio-img" />
                 </div>
-                <h3> {title} </h3>
+                <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a
                     href={demo}
@@ -108,7 +57,7 @@ export const Portfolio = () => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} className="portifolio-img" />
+                  <img src={imageUrl} alt={title} className="portifolio-img" />
                 </div>
                 <h3> {title} </h3>
                 <div className="portfolio__item-cta">
